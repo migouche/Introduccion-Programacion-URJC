@@ -10,6 +10,7 @@ int main()
     {
         printf("Introduce un numero >>> ");
         total += n;
+
         scanf("%d", &n);
     }
 
