@@ -1,16 +1,20 @@
 #include "stdio.h"
+#define INT_MAX 2147483647
 
 int main()
 {
 
-    int t = 0;
-    int i = 1;
+    int min = INT_MAX;
+    int i = INT_MAX;
 
-    do {
+
+    while (i != 0) {
         scanf("%d", &i);
-        t += i;
-    } while (i != 0);
+        if (i < min && i > 0) {
+            min = i;
+        }
+    }
 
-    printf("La suma de los numeros es %d\n", t);
+    printf("el menor número es %d\n", min);
     return 0;
 }
