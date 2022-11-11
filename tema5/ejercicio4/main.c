@@ -1,12 +1,15 @@
 #include "stdio.h"
+#define ARR_SIZE 5
 
 int main()
 {
-    int arr[5];
-    for (int i = 0; i < 5; i++)
+    int arr[ARR_SIZE];
+    for (int i = 0; i < ARR_SIZE; i++)
     {
         printf("Introduce un numero >>> ");
-        scanf("%d", &arr[i]);
+        int num;
+        scanf("%d", &num); //introducimos el scanf en el indice i del array
+        arr[i] = num;
     }
 
     for(int i = 4; i >= 0; i--)

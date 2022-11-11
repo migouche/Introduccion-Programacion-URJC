@@ -1,27 +1,19 @@
 #include "stdio.h"
-
-int main()
-{
-    //triangulo de floyd
+int main(){
     int n;
+    int num = 1;
+
     printf("Introduce un numero >>> ");
     scanf("%d", &n);
 
-    int i = 1;
-    int j = 1;
-    int k = 1;
-    while (i <= n)
+
+    for(int i = 1; i <= n; i++)
     {
-        while (j <= i)
+        for (int j = 0; j < i; j++)
         {
-            printf("%d ", k);
-            j++;
-            k++;
+            printf("%d ", num++);
         }
         printf("\n");
-        i++;
-        j = 1;
     }
-
     return 0;
 }
