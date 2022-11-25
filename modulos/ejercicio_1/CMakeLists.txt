@@ -3,5 +3,5 @@ project(introduccion_programacion C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(a.out main.c)
-add_subdirectory(modulos/ejercicio_1)
+
+add_executable(introduccion_programacion main.c modulo.c modulo.h)

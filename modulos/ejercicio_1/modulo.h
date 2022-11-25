@@ -1,0 +1,10 @@
+//
+// Created by migouche on 25/11/22.
+//
+
+#ifndef INTRODUCCION_PROGRAMACION_MODULO_H
+#define INTRODUCCION_PROGRAMACION_MODULO_H
+
+#endif //INTRODUCCION_PROGRAMACION_MODULO_H
+
+int par(int n);

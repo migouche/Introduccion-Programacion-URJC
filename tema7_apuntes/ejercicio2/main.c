@@ -2,12 +2,9 @@
 
 int sumaSerie(int n)
 {
-    int suma = 0;
-    for (int i = 0; i < n; i++)
-    {
-        suma += n - i;
-    }
-    return suma;
+    if (n <= 1)
+        return 1;
+    return n + sumaSerie(n -1);
 }
 
 int main()
